@@ -1,7 +1,6 @@
 import { webpackBundler } from "@vuepress/bundler-webpack";
 import { defineUserConfig } from "vuepress";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
-import { walinePlugin } from '@waline/client'; // 引入 Waline 插件
 
 import theme from "./theme.js";
 
@@ -12,7 +11,7 @@ export default defineUserConfig({
   // 网站语言，默认为中文
   lang: "zh-CN",
   // 网站标题
-  title: "Fantasy的笔记",
+  title: "LearnData 开源笔记",
   // 网站描述
   description: "开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。",
 
@@ -33,19 +32,9 @@ export default defineUserConfig({
       // 设置你的 Analytics ID
       id: "G-RWKZTY2P9R",
     }),
-
-    // Waline 评论插件
-    walinePlugin({
-      serverURL: 'https://pinlun.675222.xyz', // 替换为你的 Waline 服务器地址
-      locale: {
-        placeholder: '留下你的评论...', // 自定义评论输入框的提示语
-      },
-    }),
   ],
-
-  // 使用 webpack 作为打包器
   bundler: webpackBundler({
-    postcss: {}, // PostCSS 配置
-    vue: {}, // Vue 相关配置
+    postcss: {},
+    vue: {},
   }),
 });
