@@ -3,71 +3,59 @@ name: docs build
 on:
   push:
     branches:
-      # 触发条件：仅在推送到 main 分支时触发
+      # 确保这是你正在使用的分支名称
       - main
 
 jobs:
   LearnData-build:
     runs-on: ubuntu-latest
     env:
-      # 从 GitHub Secrets 中获取 FTP 相关的环境变量
       FTP_HOST: ${{ secrets.ftp_host }}
-
     steps:
-      # 步骤 1：检出代码仓库
       - name: Checkout 🛎️
         uses: actions/checkout@v4
         with:
-          # 获取所有标记和分支的完整历史记录，确保可以追溯历史
+          # 获取所有标记和分支的所有历史记录（updatetime 必须，否则每次都会变化）
           fetch-depth: 0
+          # 如果文档包含 Git 子模块，请取消注释下一行
+          # submodules: true
 
-      # 步骤 2：安装 pnpm 包管理器
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9  # 指定安装 pnpm 版本
-          run_install: true  # 安装项目的依赖
+          version: 9
+          run_install: true
 
-      # 步骤 3：安装 Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20  # 指定 Node.js 版本
-          cache: pnpm  # 使用 pnpm 作为缓存机制，加速依赖安装
+          node-version: 20
+          cache: pnpm
 
-      # 步骤 4：安装项目依赖，包括 Waline 客户端
-      - name: Install dependencies
-        run: |
-          pnpm add @waline/client  # 安装 Waline 依赖
-          pnpm install  # 安装其他项目依赖
-
-      # 步骤 5：构建文档
+      # 复制读书笔记到静态页面路径，并构建页面
       - name: Build Docs
         env:
-          NODE_OPTIONS: --max_old_space_size=8192  # 增加 Node.js 运行内存，防止构建时内存不足
+          NODE_OPTIONS: --max_old_space_size=8192
         run: |-
-          # 复制读书笔记到公共文件夹中
           pnpm cpx "docs/reading/**" docs/.vuepress/public/reading
-          # 执行构建命令，生成静态文件
           pnpm run docs:build
-          # 防止 GitHub Pages 使用 Jekyll 来处理静态页面
           > docs/.vuepress/dist/.nojekyll
 
-      # 步骤 6：部署到 GitHub Pages
       - name: Deploy GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # 将构建生成的静态文件推送到 gh-pages 分支
-          folder: docs/.vuepress/dist  # 静态文件所在的目录
+          # 指定静态文件部署到的分支
+          branch: gh-pages
+          folder: docs/.vuepress/dist
 
-      # 步骤 7：如果 FTP 配置存在，将文件同步到 FTP 服务器
+      # 如果配置了 FTP 服务器密钥，才会执行本步骤，将页面静态文件同步到服务器
       - name: 📂 Sync files
-        if: env.FTP_HOST != ''  # 只有当 FTP_HOST 不为空时才执行
+        if: env.FTP_HOST != ''
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          local-dir: docs/.vuepress/dist/  # 指定本地需要上传的目录
-          server: ${{ secrets.ftp_host }}  # FTP 服务器地址
-          username: ${{ secrets.ftp_username }}  # FTP 用户名
-          password: ${{ secrets.ftp_password }}  # FTP 密码
-          port: ${{ secrets.ftp_port }}  # FTP 端口，建议修改默认的21端口
-          timeout: 600000  # 设置超时时间为600秒（10分钟）
+          local-dir: docs/.vuepress/dist/
+          server: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          port: ${{ secrets.ftp_port }} # 建议更改默认的 21 端口
+          timeout: 600000
