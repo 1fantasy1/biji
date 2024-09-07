@@ -1,6 +1,7 @@
 import { webpackBundler } from "@vuepress/bundler-webpack";
 import { defineUserConfig } from "vuepress";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { walinePlugin } from '@waline/client'; // 引入 Waline 插件
 
 import theme from "./theme.js";
 
@@ -32,9 +33,19 @@ export default defineUserConfig({
       // 设置你的 Analytics ID
       id: "G-RWKZTY2P9R",
     }),
+
+    // Waline 评论插件
+    walinePlugin({
+      serverURL: 'https://your-waline-server-url', // 替换为你的 Waline 服务器地址
+      locale: {
+        placeholder: '留下你的评论...', // 自定义评论输入框的提示语
+      },
+    }),
   ],
+
+  // 使用 webpack 作为打包器
   bundler: webpackBundler({
-    postcss: {},
-    vue: {},
+    postcss: {}, // PostCSS 配置
+    vue: {}, // Vue 相关配置
   }),
 });
