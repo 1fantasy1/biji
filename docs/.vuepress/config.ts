@@ -36,7 +36,7 @@ export default defineUserConfig({
 
     // Waline 评论插件
     walinePlugin({
-      serverURL: 'https://your-waline-server-url', // 替换为你的 Waline 服务器地址
+      serverURL: 'https://pinlun.675222.xyz', // 替换为你的 Waline 服务器地址
       locale: {
         placeholder: '留下你的评论...', // 自定义评论输入框的提示语
       },
