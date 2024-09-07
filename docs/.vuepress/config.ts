@@ -1,7 +1,7 @@
 import { webpackBundler } from "@vuepress/bundler-webpack";
 import { defineUserConfig } from "vuepress";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
-import Waline from '@waline/client'; // 引入 Waline 插件
+import { walinePlugin } from '@waline/client'; // 引入 Waline 插件
 
 import theme from "./theme.js";
 
