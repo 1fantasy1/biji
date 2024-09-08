@@ -22,7 +22,7 @@ export default hopeTheme({
   // copyright 默认为 Copyright © <作者>
   copyright: `
   版权声明：自由转载 - 非商用 - 非衍生 - 保持署名<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans" target="_blank" rel="noopener noreferrer">（创意共享 4.0 许可证）</a>|
-  Copyright © 2023-present LearnData</a>`，
+  Copyright © 2023-present LearnData</a>`,
 
   displayFooter: true,
   // 页脚，支持使用 HTMLString 以显示备案信息等
@@ -79,7 +79,7 @@ export default hopeTheme({
     medias: {
       GitHub: "https://github.com/rockbenben",
       Zhihu: "https://www.zhihu.com/people/qingwhat",
-      少数派: { icon: "https://newzone.top/icons/sspai.svg", link: "https://sspai.com/u/zqj05i4v/posts" },
+      少数派: { icon: "https://newzone.top/icons/sspai.svg"， link: "https://sspai.com/u/zqj05i4v/posts" },
       Wechat: "https://img.newzone.top/wechat.svg",
       Email: "mailto:learndata@newzone.top",
       Discord: "https://discord.gg/PZTQfJ4GjX",
@@ -106,7 +106,7 @@ export default hopeTheme({
         "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f635-200d-1f4ab.png",
       ],
       // 部署 Waline：https://waline.js.org/guide/get-started.html
-      pageview: true， // 浏览量统计
+      pageview: true,// 浏览量统计
       locales: {
         "/": {
           // 表情互动提示文字
