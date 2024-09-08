@@ -1,12 +1,12 @@
 ---
 article: false
-title: LearnData 开源笔记
+title: Fantasy的开源笔记
 icon: fa6-solid:book-open-reader
 ---
 
-> 开源工具、效率方法、心理学探索的自我提升笔记
+> 测试笔记中....
 
-[![](https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge)](https://discord.gg/PZTQfJ4GjX)
+## 模板作者链接:[<img height="20" src="https://newzone.top/logo.svg" width="25"/>](https://newzone.top/)
 
 ## ✨ 初衷
 
