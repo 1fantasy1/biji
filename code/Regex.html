@@ -4,13 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="keywords" content="自我提升,效率提升,开源工具,学习笔记" />
-    
-    <!-- 引入Waline的CSS样式 -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@waline/client@v3/dist/waline.css"
-    />
-    
     <style>
       html {
         background: var(--bg-color, #fff);
@@ -36,7 +29,7 @@
     </script>
     <meta property="og:url" content="https://newzone.top/code/Regex.html"><meta property="og:site_name" content="LearnData 开源笔记"><meta property="og:title" content="正则表达式"><meta property="og:description" content="正则表达式，又称规则表达式，是使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串，通常被用来检索、替换那些符合某个模式（规则）的文本。 正则入门：正则 30 分钟入门，LEARN REGEX 中文版 实用表达式 {} 限定符 (表示固定位数)。比如：\\d{5} 匹配长度有 5 个的数字，\\d{1,5} 最少匹配 1 个，最长匹配 5 个数字。..."><meta property="og:type" content="website"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2024-09-07T06:39:30.000Z"><meta property="article:author" content="LearnData"><meta property="article:modified_time" content="2024-09-07T06:39:30.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"正则表达式","description":"正则表达式，又称规则表达式，是使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串，通常被用来检索、替换那些符合某个模式（规则）的文本。 正则入门：正则 30 分钟入门，LEARN REGEX 中文版 实用表达式 {} 限定符 (表示固定位数)。比如：\\\\d{5} 匹配长度有 5 个的数字，\\\\d{1,5} 最少匹配 1 个，最长匹配 5 个数字。..."}</script><link rel="alternate" type="application/atom+xml" href="https://newzone.top/atom.xml" title="LearnData 开源笔记 Atom Feed"><link rel="alternate" type="application/json" href="https://newzone.top/feed.json" title="LearnData 开源笔记 JSON Feed"><link rel="alternate" type="application/rss+xml" href="https://newzone.top/rss.xml" title="LearnData 开源笔记 RSS Feed"><link rel="icon" href="/favicon.ico"><title>正则表达式 | LearnData 开源笔记</title><meta name="description" content="正则表达式，又称规则表达式，是使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串，通常被用来检索、替换那些符合某个模式（规则）的文本。 正则入门：正则 30 分钟入门，LEARN REGEX 中文版 实用表达式 {} 限定符 (表示固定位数)。比如：\\d{5} 匹配长度有 5 个的数字，\\d{1,5} 最少匹配 1 个，最长匹配 5 个数字。...">
     <link rel="stylesheet" href="/assets/css/styles.e2e47a78.css">
-    <link rel="preload" href="/assets/js/runtime~app.2a90d801.js" as="script"><link rel="preload" href="/assets/css/styles.e2e47a78.css" as="style"><link rel="preload" href="/assets/js/8466.0d6197e4.js" as="script"><link rel="preload" href="/assets/js/app.838a6663.js" as="script">
+    <link rel="preload" href="/assets/js/runtime~app.3b0527c7.js" as="script"><link rel="preload" href="/assets/css/styles.e2e47a78.css" as="style"><link rel="preload" href="/assets/js/8466.0d6197e4.js" as="script"><link rel="preload" href="/assets/js/app.776aa78c.js" as="script">
     
     <!-- 统计代码区域-->
   </head>
@@ -64,23 +57,8 @@
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD;">var</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75;"> str2</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2;"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B;"> str</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF;">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF;">split</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF;">(</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379;">&quot;dog&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF;">).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF;">join</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF;">(</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379;">&quot;cat&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF;">); #</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75;">分割替换</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="表达式修饰符" tabindex="-1"><a class="header-anchor" href="#表达式修饰符"><span>表达式修饰符</span></a></h2><p>元字符：区分大小写</p><table><thead><tr><th>常用正则代码</th><th>说明</th></tr></thead><tbody><tr><td>.</td><td>匹配除换行符以外的任意字符</td></tr><tr><td>*</td><td>匹配 0 个或多个.(有多少匹配多少，贪婪模式)</td></tr><tr><td>?</td><td>匹配 0 个或 1 个 (至少匹配一个)</td></tr><tr><td>$</td><td>以什么结尾的，如<code>\\d+0$</code> (以 0 结尾)</td></tr><tr><td>^</td><td>以什么开头的，如<code>^http</code>匹配以 http 开头的字符串</td></tr><tr><td>\w</td><td>匹配字母或数字或下划线或汉字</td></tr><tr><td>\W</td><td>匹配任意不是字母，数字，下划线，汉字的字符</td></tr><tr><td>\d</td><td>匹配数字</td></tr><tr><td>\D</td><td>匹配任意非数字的字符</td></tr><tr><td>\s</td><td>匹配任意的空白符（空格 ,制表符 )</td></tr><tr><td>\S</td><td>匹配任意不是空白符的字符</td></tr><tr><td>\r</td><td>回车符</td></tr><tr><td>\n</td><td>换行符 (一般情况下使用\r\n 匹配回车换行)</td></tr><tr><td>\t</td><td>制表符，Tab</td></tr><tr><td>\u4e00-\u9fa5</td><td>非中文</td></tr></tbody></table><p>常用分组语法</p><table><thead><tr><th>分类</th><th>代码/语法</th><th>说明</th></tr></thead><tbody><tr><td>捕获</td><td>(exp)</td><td>匹配 exp，并捕获文本到自动命名的组里</td></tr><tr><td></td><td><code>(?&lt;name&gt;exp)</code></td><td>匹配 exp，并捕获文本到名称为 name 的组里，也可以写成 (?&#39;name&#39;exp)</td></tr><tr><td></td><td>(?:exp)</td><td>匹配 exp，不捕获匹配的文本，也不给此分组分配组号</td></tr><tr><td>零宽断言</td><td>(?=exp)</td><td>匹配 exp 前面的位置</td></tr><tr><td></td><td>(?&lt;=exp)</td><td>匹配 exp 后面的位置</td></tr><tr><td></td><td>(?!exp)</td><td>匹配后面跟的不是 exp 的位置</td></tr><tr><td></td><td>(?&lt;!exp)</td><td>匹配前面不是 exp 的位置</td></tr><tr><td>注释</td><td>(?#comment)</td><td>这种类型的分组不对正则表达式的处理产生任何影响，用于提供注释让人阅读</td></tr></tbody></table><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="footnote1" class="footnote-item"><p><a href="https://blog.csdn.net/thewindkee/article/details/52785763" target="_blank" rel="noopener noreferrer">正则表达式匹配：包含且不包含</a> <a href="#footnote-ref1" class="footnote-backref">↩︎</a></p></li><li id="footnote2" class="footnote-item"><p><a href="https://blog.csdn.net/xiiii/article/details/89450341" target="_blank" rel="noopener noreferrer">正则表达式匹配不包含某些字符串的技巧</a> <a href="#footnote-ref2" class="footnote-backref">↩︎</a></p></li></ol></section></div><!----><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="update-time"><span class="vp-meta-label">上次编辑于: </span><!----></div><!----></div></footer><nav class="vp-page-nav"><a class="route-link auto-link prev" href="/code/AutoHotkey.html" aria-label="AutoHotkey"><div class="hint"><span class="arrow start"></span>上一页</div><div class="link"><iconify-icon class="font-icon icon" style="" mode="style" inline icon="fa6-brands:autoprefixer" width="1em" height="1em"></iconify-icon>AutoHotkey</div></a><!----></nav><div id="vp-comment" class="giscus-wrapper input-top" style="display:block;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" preserveAspectRatio="xMidYMid" viewBox="0 0 100 100"><circle cx="28" cy="75" r="11" fill="currentColor"><animate attributeName="fill-opacity" begin="0s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></circle><path fill="none" stroke="#88baf0" stroke-width="10" d="M28 47a28 28 0 0 1 28 28"><animate attributeName="stroke-opacity" begin="0.1s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></path><path fill="none" stroke="#88baf0" stroke-width="10" d="M28 25a50 50 0 0 1 50 50"><animate attributeName="stroke-opacity" begin="0.2s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></path></svg></div><!----><!--]--></main><!--]--><footer class="vp-footer-wrapper"><!----><div class="vp-copyright">
   版权声明：自由转载 - 非商用 - 非衍生 - 保持署名<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans" target="_blank" rel="noopener noreferrer">（创意共享 4.0 许可证）</a>|
   Copyright © 2023-present LearnData</a>
-  </div></footer></div><!--]--><!--]--><!--[--><!----><!----><!--]--><!--]-->
-
-        <!-- 创建Waline容器 -->
-        <div id="waline"></div>
-    
-        <!-- 引入Waline的JS文件并初始化Waline组件 -->
-        <script type="module">
-          import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-    
-          init({
-            el: '#waline',
-            serverURL: 'https://pinlun.675222.xyz', // 替换成您的服务器地址
-          });
-        </script>
-
-    </div>
-
+  </div></footer></div><!--]--><!--]--><!--[--><!----><!----><!--]--><!--]--></div>
+    <script src="/assets/js/runtime~app.3b0527c7.js" defer></script><script src="/assets/js/8466.0d6197e4.js" defer></script><script src="/assets/js/app.776aa78c.js" defer></script>
     <!-- 看板娘区块 -->
     <script src="/live2d-widget/autoload.js"></script>
     <!-- End 看板娘区块 -->

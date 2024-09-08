@@ -4,13 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="keywords" content="自我提升,效率提升,开源工具,学习笔记" />
-    
-    <!-- 引入Waline的CSS样式 -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@waline/client@v3/dist/waline.css"
-    />
-    
     <style>
       html {
         background: var(--bg-color, #fff);
@@ -36,7 +29,7 @@
     </script>
     <meta property="og:url" content="https://newzone.top/"><meta property="og:site_name" content="LearnData 开源笔记"><meta property="og:title" content="LearnData 开源笔记"><meta property="og:description" content="开源工具、效率方法、心理学探索的自我提升笔记 ✨ 初衷 曾经，我采用了 Notion、Obsidian 和 飞书 等多款知识管理工具来存储我的心得与笔记。然而，这种方式导致我的资料分散，难以管理和分享。 更重要的是，笔记里的知识并不属于你，只有经过消化、应用，才会成为我们的财富。 为此，我基于 VuePress 和 vuepress-theme-hop..."><meta property="og:type" content="website"><meta property="og:image" content="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2024-09-07T06:39:30.000Z"><meta property="article:author" content="LearnData"><meta property="article:modified_time" content="2024-09-07T06:39:30.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"LearnData 开源笔记","description":"开源工具、效率方法、心理学探索的自我提升笔记 ✨ 初衷 曾经，我采用了 Notion、Obsidian 和 飞书 等多款知识管理工具来存储我的心得与笔记。然而，这种方式导致我的资料分散，难以管理和分享。 更重要的是，笔记里的知识并不属于你，只有经过消化、应用，才会成为我们的财富。 为此，我基于 VuePress 和 vuepress-theme-hop..."}</script><link rel="alternate" type="application/atom+xml" href="https://newzone.top/atom.xml" title="LearnData 开源笔记 Atom Feed"><link rel="alternate" type="application/json" href="https://newzone.top/feed.json" title="LearnData 开源笔记 JSON Feed"><link rel="alternate" type="application/rss+xml" href="https://newzone.top/rss.xml" title="LearnData 开源笔记 RSS Feed"><link rel="icon" href="/favicon.ico"><title>LearnData 开源笔记 | LearnData 开源笔记</title><meta name="description" content="开源工具、效率方法、心理学探索的自我提升笔记 ✨ 初衷 曾经，我采用了 Notion、Obsidian 和 飞书 等多款知识管理工具来存储我的心得与笔记。然而，这种方式导致我的资料分散，难以管理和分享。 更重要的是，笔记里的知识并不属于你，只有经过消化、应用，才会成为我们的财富。 为此，我基于 VuePress 和 vuepress-theme-hop...">
     <link rel="stylesheet" href="/assets/css/styles.e2e47a78.css">
-    <link rel="preload" href="/assets/js/runtime~app.2a90d801.js" as="script"><link rel="preload" href="/assets/css/styles.e2e47a78.css" as="style"><link rel="preload" href="/assets/js/8466.0d6197e4.js" as="script"><link rel="preload" href="/assets/js/app.838a6663.js" as="script">
+    <link rel="preload" href="/assets/js/runtime~app.3b0527c7.js" as="script"><link rel="preload" href="/assets/css/styles.e2e47a78.css" as="style"><link rel="preload" href="/assets/js/8466.0d6197e4.js" as="script"><link rel="preload" href="/assets/js/app.776aa78c.js" as="script">
     
     <!-- 统计代码区域-->
   </head>
@@ -62,23 +55,8 @@
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF;">});</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>提交并推送更改。等待 GitHub Actions 自动重新部署网站。</p></li><li><p>部署后，刷新网站应能正常显示。</p></li></ol><p>通过正确配置 <code>base</code> 路径，你的网站将能够加载所有必要的资源文件，从而正确显示样式和功能。如果你的网站是部署在根路径（如 <code>https://xxx.github.io/</code>），那么 <code>base</code> 应保留默认值 <code>/</code>。</p><h3 id="同步服务器报错" tabindex="-1"><a class="header-anchor" href="#同步服务器报错"><span>同步服务器报错</span></a></h3><ul><li><p><code>Error: Input required and not supplied: server</code> 表示服务器配置错误，请按照上方的网站部署步骤检查配置。如果你不需要将<strong>网页部署同步到服务器</strong>，可以删除 <code>.github/workflows/main.yml</code> 中 Sync files 区块的代码。</p></li><li><p><code>FTPError: 530 Login authentication failed</code> 指 FTP 密码错误或账号不存在，可使用 FileZilla 来测试 FTP 的有效性。</p></li><li><p><code>Error: Timeout (control socket)</code> 指同步服务器出现超时报错。如果出现该错误，可以进入 Actions 页面，点击右侧按钮「Re-run all jobs」，重新进行部署。如果错误连续出现，可以尝试关闭服务器防火墙，检查 GitHub 服务器 IP 是否屏蔽了。</p></li></ul><h3 id="get-counter-failed-with-403" tabindex="-1"><a class="header-anchor" href="#get-counter-failed-with-403"><span>Get counter failed with 403</span></a></h3><p><code>Get counter failed with 403</code> 错误仅在本地运行 <code>pnpm docs:dev</code> 时使用<strong>非 localhost 域名</strong>会发生，静态构建过程中不会出现。这是由评论插件 Waline 引起的。要解决这个问题，只需在 <code>docs/.vuepress/theme.ts</code> 文件中的 plugins 部分删除 Waline 配置。</p><figure><img src="https://img.newzone.top/2024-02-23-21-07-05.png?imageMogr2/format/webp" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure><h3 id="err-module" tabindex="-1"><a class="header-anchor" href="#err-module"><span>ERR_MODULE</span></a></h3><p>如果出现 <code>Error [ERR_MODULE_NOT_FOUND]: Cannot find module</code> 的报错，可能是第三方插件或 pacakge.json 环境依赖未正确配置。此报错出现的几率极低，如果遇到，可以使用最新版本的 <code>package.json</code> 和 <code>pnpm-lock.yaml</code> 来覆盖本地设置，或者删除主目录下的 <code>.npmrc</code> 文件。</p><h3 id="本地运行-learndata" tabindex="-1"><a class="header-anchor" href="#本地运行-learndata"><span>本地运行 LearnData</span></a></h3><ol><li>为了本地运行，你需要安装 npm 和 pnpm 环境，可参考<a href="https://newzone.top/deploy/VPS.html#%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2" target="_blank" rel="noopener noreferrer">环境部署教程</a>。</li><li>将 LearnData 项目下载到本地后，在项目目录下打开终端，输入命令 <code>pnpm i</code> 安装依赖。</li><li>在终端中输入命令 <code>pnpm docs:dev</code>，若成功则会提示访问链接，默认为 <code>http://localhost:8080/</code>。</li></ol><p>本地服务运行后，修改文件时页面会同步更新预览。若需停止本地服务器，可在终端中按下 <code>Ctrl + C</code>。</p><p>如果你想深入了解 LearnData 的高级技巧，请浏览 <a href="https://newzone.top/posts/2024-01-28-learndata-advanced.html" target="_blank" rel="noopener noreferrer">LearnData 博客：高效知识管理和进阶应用技巧</a>。</p></div><!----><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="update-time"><span class="vp-meta-label">上次编辑于: </span><!----></div><!----></div></footer><!----><div id="vp-comment" class="giscus-wrapper input-top" style="display:block;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" preserveAspectRatio="xMidYMid" viewBox="0 0 100 100"><circle cx="28" cy="75" r="11" fill="currentColor"><animate attributeName="fill-opacity" begin="0s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></circle><path fill="none" stroke="#88baf0" stroke-width="10" d="M28 47a28 28 0 0 1 28 28"><animate attributeName="stroke-opacity" begin="0.1s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></path><path fill="none" stroke="#88baf0" stroke-width="10" d="M28 25a50 50 0 0 1 50 50"><animate attributeName="stroke-opacity" begin="0.2s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></path></svg></div><!----><!--]--></main><!--]--><footer class="vp-footer-wrapper"><!----><div class="vp-copyright">
   版权声明：自由转载 - 非商用 - 非衍生 - 保持署名<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans" target="_blank" rel="noopener noreferrer">（创意共享 4.0 许可证）</a>|
   Copyright © 2023-present LearnData</a>
-  </div></footer></div><!--]--><!--]--><!--[--><!----><!----><!--]--><!--]-->
-
-        <!-- 创建Waline容器 -->
-        <div id="waline"></div>
-    
-        <!-- 引入Waline的JS文件并初始化Waline组件 -->
-        <script type="module">
-          import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-    
-          init({
-            el: '#waline',
-            serverURL: 'https://pinlun.675222.xyz', // 替换成您的服务器地址
-          });
-        </script>
-
-    </div>
-
+  </div></footer></div><!--]--><!--]--><!--[--><!----><!----><!--]--><!--]--></div>
+    <script src="/assets/js/runtime~app.3b0527c7.js" defer></script><script src="/assets/js/8466.0d6197e4.js" defer></script><script src="/assets/js/app.776aa78c.js" defer></script>
     <!-- 看板娘区块 -->
     <script src="/live2d-widget/autoload.js"></script>
     <!-- End 看板娘区块 -->
