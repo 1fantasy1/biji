@@ -41,20 +41,22 @@
     <!-- 统计代码区域-->
   </head>
   <body>
-    <div id="app"><!--vuepress-ssr-content--></div>
-    
-    <!-- 创建Waline容器 -->
-    <div id="waline"></div>
-    
-    <!-- 引入Waline的JS文件并初始化Waline组件 -->
-    <script type="module">
-      import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    <div id="app"><!--vuepress-ssr-content-->
 
-      init({
-        el: '#waline',
-        serverURL: 'https://pinlun.675222.xyz', // 替换成您的服务器地址
-      });
-    </script>
+        <!-- 创建Waline容器 -->
+        <div id="waline"></div>
+    
+        <!-- 引入Waline的JS文件并初始化Waline组件 -->
+        <script type="module">
+          import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    
+          init({
+            el: '#waline',
+            serverURL: 'https://pinlun.675222.xyz', // 替换成您的服务器地址
+          });
+        </script>
+
+    </div>
 
     <!-- 看板娘区块 -->
     <script src="/live2d-widget/autoload.js"></script>
