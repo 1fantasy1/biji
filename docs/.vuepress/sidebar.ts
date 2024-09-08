@@ -74,7 +74,7 @@ export default sidebar({
       ],
     },
     {
-      text: "🛖 生活记录",
+      text: "🍬生活记录",
       icon: "",
       prefix: "/family/",
       collapsible: true,
