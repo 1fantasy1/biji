@@ -4,13 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="keywords" content="自我提升,效率提升,开源工具,学习笔记" />
-    
-    <!-- 引入Waline的CSS样式 -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@waline/client@v3/dist/waline.css"
-    />
-    
     <style>
       html {
         background: var(--bg-color, #fff);
@@ -41,23 +34,8 @@
     <!-- 统计代码区域-->
   </head>
   <body>
-    <div id="app"><!--vuepress-ssr-content-->
-
-        <!-- 创建Waline容器 -->
-        <div id="waline"></div>
-    
-        <!-- 引入Waline的JS文件并初始化Waline组件 -->
-        <script type="module">
-          import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-    
-          init({
-            el: '#waline',
-            serverURL: 'https://pinlun.675222.xyz', // 替换成您的服务器地址
-          });
-        </script>
-
-    </div>
-
+    <div id="app"><!--vuepress-ssr-content--></div>
+    <!--vuepress-ssr-scripts-->
     <!-- 看板娘区块 -->
     <script src="/live2d-widget/autoload.js"></script>
     <!-- End 看板娘区块 -->
