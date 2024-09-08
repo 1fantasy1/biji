@@ -1,6 +1,7 @@
+/*
 import type { VNode } from "vue";
 import { defineComponent, h } from "vue";
-/*
+
 export default defineComponent({
   name: "SocialLink",
 
@@ -25,37 +26,17 @@ export default defineComponent({
   },
 });
 */
-/*
-export default defineComponent({
-  name: "SocialLink",
-
-  setup() {
-    const qqLink = "https://www.bilibili.com"; // 填入你的 QQ 群链接
-    const qqIcon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" style="width:1.25rem;height:1.25rem;vertical-align:middle"><path d="M824.8 613.2c-16-51.4-34.4-94.6-62.7-165.3C766.5 262.2 689.3 112 511.5 112 331.7 112 256.2 265.2 261 447.9c-28.4 70.8-46.7 113.7-62.7 165.3-34 109.5-23 154.8-14.6 155.8 18 2.2 70.1-82.4 70.1-82.4 0 49 25.2 112.9 79.8 159-26.4 8.1-85.7 29.9-71.6 53.8 11.4 19.3 196.2 12.3 249.5 6.3 53.3 6 238.1 13 249.5-6.3 14.1-23.8-45.3-45.7-71.6-53.8 54.6-46.2 79.8-110.1 79.8-159 0 0 52.1 84.6 70.1 82.4 8.5-1.1 19.5-46.4-14.5-155.8z" fill="currentColor"/></svg>`;
-
-    return (): VNode =>
-      h(
-        "div",
-        { class: "vp-nav-item vp-action" },
-        h("a", {
-          class: "vp-action-link",
-          href: qqLink,
-          target: "_blank",
-          rel: "noopener noreferrer",
-          "aria-label": "QQ",
-          innerHTML: qqIcon,
-        })
-      );
-  },
-});
-*/
+import type { VNode } from 'vue';
+import { defineComponent, h } from 'vue';
 
 export default defineComponent({
   name: "SocialLink",
 
   setup() {
-    const bilibiliLink = "https://bilibili.com";
-    const bilibiliIcon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#6b6b6b" d="M18.223 3.086a1.25 1.25 0 0 1 0 1.768L17.08 5.996h1.17A3.75 3.75 0 0 1 22 9.747v7.5a3.75 3.75 0 0 1-3.75 3.75H5.75A3.75 3.75 0 0 1 2 17.247v-7.5a3.75 3.75 0 0 1 3.75-3.75h1.166L5.775 4.855a1.25 1.25 0 0 1 1.767-1.768l2.652 2.652q.119.119.198.257h3.213q.08-.14.199-.258l2.651-2.652a1.25 1.25 0 0 1 1.768 0m.027 5.42H5.75a1.25 1.25 0 0 0-1.247 1.157l-.003.094v7.5c0 .659.51 1.198 1.157 1.246l.093.004h12.5a1.25 1.25 0 0 0 1.247-1.157l.003-.093v-7.5c0-.69-.56-1.25-1.25-1.25m-10 2.5c.69 0 1.25.56 1.25 1.25v1.25a1.25 1.25 0 1 1-2.5 0v-1.25c0-.69.56-1.25 1.25-1.25m7.5 0c.69 0 1.25.56 1.25 1.25v1.25a1.25 1.25 0 1 1-2.5 0v-1.25c0-.69.56-1.25 1.25-1.25"/></svg>`;
+    const bilibiliLink = "https://bilibili.com"; // 链接到的 Bilibili 页面
+    const bilibiliIcon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024  1024" style="width:1.25rem;height:1.25rem;vertical-align:middle">
+                           <path d="M512 90.1c-195.1 0-352.8 157.7-352.8 352.8s157.7 352.8 352.8 352.8 352.9-157.7 352.9-352.8-157.8-352.8-352.9-352.8zm0 688c-137.2 0-248-110.8-248-248s110.8-248 248-248 248 110.8 248 248-110.8 248-248 248zm229.2-544.6l-153.7 153.7 153.7 153.7-60.2 60.2-153.7-153.7-153.7 153.7-60.2-60.2 153.7-153.7-153.7-153.7 60.2-60.2 153.7 153.7 153.7-153.7z" fill="currentColor"/>
+                         </svg>`;
 
     return (): VNode =>
       h(
@@ -66,7 +47,7 @@ export default defineComponent({
           href: bilibiliLink,
           target: "_blank",
           rel: "noopener noreferrer",
-          "aria-label": "Bilibili",
+          "aria-label": "bilibili",
           innerHTML: bilibiliIcon,
         })
       );
