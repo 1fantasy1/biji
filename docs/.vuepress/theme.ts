@@ -23,7 +23,7 @@ export default hopeTheme({
   copyright: `
   版权声明：自由转载 - 非商用 - 非衍生 - 保持署名<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans" target="_blank" rel="noopener noreferrer">（创意共享 4.0 许可证）</a>|
   Copyright © 2023-present LearnData</a>
-  `,
+  `，
   displayFooter: true,
   // 页脚，支持使用 HTMLString 以显示备案信息等
   // footer: `CC BY-NC-ND 4.0 Licensed`,
@@ -95,10 +95,9 @@ export default hopeTheme({
 
     // 评论配置（仅做样例，记得更换）
     comment: {
-      /*
       // 在本地运行 `pnpm docs:dev` 并使用非 localhost 域名时，容易出现 403 错误，移除本部分即可解决
       provider: "Waline",
-      serverURL: "https://waline.newzone.top",
+      serverURL: "https://pinlun.675222.xyz",
       reaction: [
         "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44d.png",
         "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44f.png",
@@ -107,7 +106,7 @@ export default hopeTheme({
         "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f635-200d-1f4ab.png",
       ],
       // 部署 Waline：https://waline.js.org/guide/get-started.html
-      // pageview: true, // 浏览量统计
+      pageview: true， // 浏览量统计
       locales: {
         "/": {
           // 表情互动提示文字
@@ -127,14 +126,6 @@ export default hopeTheme({
           level5: "化神",
         },
       },
-      */
-
-      // Giscus
-      provider: "Giscus",
-      repo: "rockbenben/LearnData",
-      repoId: "R_kgDOHdfk6Q",
-      category: "Comments",
-      categoryId: "DIC_kwDOHdfk6c4CQYNn",
     },
 
     // 组件库
