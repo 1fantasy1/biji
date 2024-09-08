@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <title>LearnData - 读书笔记</title>
+    <title>Fantasy的读书笔记</title>
     <meta name="description" content="读书笔记" />
     <meta name="keywords" content="读书笔记,阅读笔记" />
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/1fantasy1/wenjian/main/vue.css" />
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/1fantasy1/wenjian/main/toc.css" />
+    <link rel="stylesheet" href="https://oss.newzone.top/docsify/main/4.13.1/themes/vue.css" />
+    <link rel="stylesheet" href="https://oss.newzone.top/docsify/docsify-toc/dist/toc.css" />
     <!-- <link rel="stylesheet" href="https://oss.newzone.top/docsify/docsify-gifcontrol/dist/docsify-gifcontrol.css"> -->
     <!-- docsify waline -->
     <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
@@ -85,7 +85,7 @@
       window.$docsify = {
         name: "<p>🌈 读书笔记</p>", // 文档标题，会显示在侧边栏顶部
         nameLink: "https://biji.675222.xyz/", // 点击文档标题后跳转的链接地址。
-        // repo: 'https://github.com/rockbenben/LearnData',
+        // repo: 'https://github.com/1fantasy1/1fantasy1.github.io',
         // logo: '/_media/icon.svg', // 在侧边栏中出现的网站图标，你可以使用 CSS 来更改大小
         // homepage: 'README.md', // 设置首页文件加载路径。适合不想将 README.md 作为入口文件渲染，或者是文档存放在其他位置的情况使用。
         // coverpage: true, // 启用封面页。开启后是加载 _coverpage.md 文件，也可以自定义文件名。
@@ -157,6 +157,7 @@
         count: {
           language: "chinese", // default:english|chinese
         },
+        // 部署 Waline：https://waline.js.org/guide/get-started/
         // 阅读量统计与评论，不需要可删除本区块
         waline: {
           serverURL: "https://pinlun.675222.xyz",
@@ -177,14 +178,14 @@
       };
     </script>
 
-    <script src="https://raw.githubusercontent.com/1fantasy1/wenjian/main/docsify.min.js"></script>
-    <script src="https://raw.githubusercontent.com/1fantasy1/wenjian/main/search.min.js"></script>
-    <script src="https://raw.githubusercontent.com/1fantasy1/wenjian/main/zoom-image.min.js"></script>
-    <script src="https://raw.githubusercontent.com/1fantasy1/wenjian/main/docsify-pagination.min.js"></script>
-    <script src="https://raw.githubusercontent.com/1fantasy1/wenjian/main/toc.js"></script>
-    <script src="https://raw.githubusercontent.com/1fantasy1/wenjian/main/docsify-footer-enh.min.js"></script>
+    <script src="https://oss.newzone.top/docsify/main/4.13.1/docsify.min.js"></script>
+    <script src="https://oss.newzone.top/docsify/main/4.13.1/plugins/search.min.js"></script>
+    <script src="https://oss.newzone.top/docsify/main/4.13.1/plugins/zoom-image.min.js"></script>
+    <script src="https://oss.newzone.top/docsify/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="https://oss.newzone.top/docsify/docsify-toc/dist/toc.js"></script>
+    <script src="https://oss.newzone.top/docsify/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
     <!-- 
-    <script src="https://raw.githubusercontent.com/1fantasy1/wenjian/main/docsify-gifcontrol.js"></script>
+    <script src="https://oss.newzone.top/docsify/docsify-gifcontrol/dist/docsify-gifcontrol.js"></script>
     -->
 
     <!-- 使用 Gitter 实现一个 IM 即时通讯聊天室功能 
@@ -196,8 +197,8 @@
     <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
     -->
 
-    <script src="https://raw.githubusercontent.com/1fantasy1/wenjian/main/jquery.min.js"></script>
-    <script src="https://raw.githubusercontent.com/1fantasy1/wenjian/main/instantpage.min.js"></script>
+    <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://oss.newzone.top/instantpage.min.js"></script>
     <!-- 添加网站运行时间统计 -->
     <script language="javascript">
       function siteTime() {
@@ -222,7 +223,7 @@
       minutes - 0-59 之间的整数，做为 date 对象的分钟数
       seconds - 0-59 之间的整数，做为 date 对象的秒数
       microseconds - 0-999 之间的整数，做为 date 对象的毫秒数 */
-        var t1 = Date.UTC(2022, 7, 23, 22, 22, 22); //北京时间 2022-07-23 22:22:22 //LearnData 首个 commit 时间，该为你自己值得纪念的日子吧
+        var t1 = Date.UTC(2024， 9, 8， 15， 55， 55); //北京时间 2024-09-8 15:55:55 //LearnData 首个 commit 时间，该为你自己值得纪念的日子吧
         var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
         var diff = t2 - t1;
         var diffYears = Math.floor(diff / years);
@@ -238,7 +239,7 @@
       }
       siteTime();
     </script>
-    <script src="https://raw.githubusercontent.com/1fantasy1/wenjian/main/countable.min.js"></script>
-    <script src="https://raw.githubusercontent.com/1fantasy1/wenjian/main/docsify-waline.min.js"></script>
+    <script src="https://oss.newzone.top/docsify/docsify-count/dist/countable.min.js"></script>
+    <script src="https://oss.newzone.top/docsify/docsify-waline/docsify-waline.min.js"></script>
   </body>
 </html>
