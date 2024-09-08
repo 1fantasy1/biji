@@ -1,3 +1,3 @@
-- [🚀 LearnData](https://newzone.top/)
-- [📝 博客文章](https://newzone.top/blog.html)
+- [🚀 LearnData](https://biji.675222.xyz/)
+- [📝 博客文章](https://biji.675222.xyz/blog.html)
 - [🔨 工具收藏](https://nav.newzone.top/)
