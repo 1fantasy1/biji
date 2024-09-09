@@ -62,6 +62,7 @@ Windows 自用软件，以开源软件为主。**横线划掉的是他人推荐�
 快速启动：
 
 - Quicker：脚本，全局手势
+- 缩放工具：[Magpie](https://github.com/Blinue/Magpie)（全屏增强器，一些软件自带全屏会糊）
 - RunAny：指针快捷启动；一键打开网址、文件路径
 - 热键工具：Fn-PowerKey、[CapsLock+](https://capslox.com/capslock-plus/#basicFunctions)
 - 图标启动：[Lucy 快速启动](https://www.yuque.com/lucy/lucy/record) ~~、Rolan、nTrun (Win 键启动)~~
@@ -74,6 +75,8 @@ Windows 自用软件，以开源软件为主。**横线划掉的是他人推荐�
 爬虫监测：OpenWebMonitor & [spider-flow](https://github.com/ssssssss-team/spider-flow)
 
 本地搜索：Everything([拼音扩展，不建议](https://github.com/Chaoses-Ib/IbEverythingExt)) & AnyTXT Searcher（全文|OCR）~~& DocFetcher & Archivarius 3000~~
+
+查找重复文件：AllDupPortable
 
 ## 文档管理
 
@@ -97,7 +100,9 @@ Windows 自用软件，以开源软件为主。**横线划掉的是他人推荐�
 
 通讯：微信 & TIM & Telegram & Discord & Thunderbird(邮箱) ~~& 飞书 & Slack & 钉耙 & 千牛 & 阿里旺旺~~
 
-下载：IDM(**神**) & [Aria2](https://newzone.top/posts/2018-05-15-aria2_a_new_download_tool.html) & Kinhdown ~~& FDM(不支持 ed2k、磁力) & 迅雷~~
+普通下载：IDM(**神**) & [Aria2](https://newzone.top/posts/2018-05-15-aria2_a_new_download_tool.html)（命令行下载工具，可配合[图形化界面](https://github.com/Xmader/aria-ng-gui)使用）  ~~& Kinhdown & FDM(不支持 ed2k、磁力) & 迅雷~~
+
+BT下载：[qBittorrentEE](https://github.com/c0re100/qBittorrent-Enhanced-Edition)（防吸血客户端，首推，需配合[PBH](https://github.com/PBH-BTN/PeerBanHelper)使用）& [Aria2](https://aria2.github.io/) & [Xdown](https://xdown.org/) & [µTorrent](https://www.utorrent.com/)
 
 杀毒：火绒 ~~& 360（小白用这个） & 金山卫士~~
 
@@ -111,6 +116,8 @@ PDF：Sumatra PDF & PDFelement & [PDF 补丁丁](https://github.com/wmjordan/PDF
 
 系统美化：TranslucentTB（微软商店可下载）
 
+系统分析：[BlueScreenView](https://www.nirsoft.net/)（蓝屏日志分析）
+
 ## 低频工具
 
 编程工具：jetbrains全家桶、[MobaXTerm](https://github.com/RipplePiam/MobaXterm-Chinese-Simplified)（SSH+FTP）、GitHubDesktop、He3 工具箱、Postman、FileZilla（FTP）、DBeaver([数据库](https://kalacloud.com/blog/best-mysql-gui-tools/))、Fiddler(手机抓包)、Regex Match Tracer
@@ -120,6 +127,10 @@ PDF：Sumatra PDF & PDFelement & [PDF 补丁丁](https://github.com/wmjordan/PDF
 思维导图：TheBrain(无限思维扩展) & Xmind ~~& MindManager~~
 
 虚拟机：VMware ~~& VirtualBox~~
+
+安装工具：[Office Tool Plus](https://otp.landian.vip/zh-cn/)
+
+压缩包密码破解：Ziperello
 
 远程管理：RustDesk & ToDesk ~~& AnyDesk & Teamviewer & Remote Utilities & XT800~~
 
@@ -133,6 +144,8 @@ PDF：Sumatra PDF & PDFelement & [PDF 补丁丁](https://github.com/wmjordan/PDF
 
 [LittleBigMouse](https://github.com/mgth/LittleBigMouse)：实现 Windows 多显示器鼠标平滑移动。
 
+NatTypeTester ：测试当前网络的 NAT 类型，在联机游戏时可检测是否可玩
+
 ## Android
 
 - [GKD](https://github.com/gkd-kit/gkd)：手机端去广告的开源利器，可以点击跳过任意开屏广告/点击关闭应用内部任意弹窗广告，如关闭百度贴吧帖子广告卡片/知乎回答底部推荐广告卡片。
@@ -141,6 +154,7 @@ PDF：Sumatra PDF & PDFelement & [PDF 补丁丁](https://github.com/wmjordan/PDF
 - [AutoX](https://github.com/kkevsekk1/AutoX)：开源版的 Auto.js，没有包名屏蔽。相关信息可以参考 [快人一步：使用 Tasker+AutoX 一键直达健康码](https://sspai.com/post/65863)。
 - PikPak：国外网盘利用离线下载功能下载BT速度极快
 - VLC：手机上的MPV播放器
+- [搞机工具箱](https://jamcz.com/gjgjx/)：将adb命令图形化，使使用者更加清晰易懂，包含各种手机adb指令。**不推荐小白使用**
 
 ---
 
@@ -157,8 +171,8 @@ PDF：Sumatra PDF & PDFelement & [PDF 补丁丁](https://github.com/wmjordan/PDF
 - 桌面便签：小黄条、URNotes 意唯桌面便签 (2015 停止更新，复制经常出错)
 - 网络电台：龙卷风
 - 英文写作：易改
-- 流量管理：cFosSpeed
-- 游戏平台：VS & 4399
+- 流量管理：cFosSpeed & GlassWire（有bug，在window上使用有可能导致蓝屏）
+- 游戏平台：[steam](https://store.steampowered.com/) & VS & 4399
 - 客服：飞豆客服聊天助手 & [mirai(qq 机器人)](https://github.com/mamoe/mirai) & 酷 Q(已关)
 - 其他：按键精灵、DisplayCal（屏幕）、One Quik(虚拟桌面切换)、Auslogics Disk Defrag(磁盘整理)、Reflector 3(手机投屏)、VoiceBot(声控游戏)
 - [DockIt](http://dogbean.ysepan.com/)：主显示屏中，非全屏状态下，快速将窗口局部化。如何默认不全屏；应用不自动吸边？
