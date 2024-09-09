@@ -5,29 +5,29 @@ icon: fa6-solid:list
 order: 1
 ---
 
-Windows 自用软件，以开源软件为主。
+Windows 自用软件，以开源软件为主。**横线划掉的是他人推荐，自己不用的**
 
 ## 知识记录
 
-本地笔记：Logseq & Obsidian & 妙笔 & Joplin ~~& Wiz 笔记 & OneNote~~
+本地笔记：vivo笔记 ~~& Logseq & Obsidian & 妙笔 & Joplin & Wiz 笔记 & OneNote~~
 
-在线笔记：Notion & 飞书 & flomo & Airtable & 简悦
+在线笔记：飞书 ~~& flomo & Airtable & 简悦 & Notion~~
 
-清单日历：滴答清单 & [Super Productivity](https://github.com/johannesjo/super-productivity) & Trello & Habitify & 桌面日历 ~~& Workflowy~~
+清单日历：桌面日历 & ~~滴答清单 & [Super Productivity](https://github.com/johannesjo/super-productivity) & Trello & Habitify  & Workflowy~~
 
 记忆复习：思源笔记 ~~& [SuperMemo](https://github.com/L-M-Sherlock/sm18-lazy-package/releases/tag/1.1.3) & [kopia](https://github.com/kopia/kopia)(备份) & Anki~~
 
-文本编辑：Visual Studio Code & Notepad++ & HbuilderX & WPS & office tab ~~& [MarkText](https://github.com/marktext/marktext) & Slide & 方方格子 & Typora & Yu Writer & UltraEdit~~
+文本编辑：Visual Studio Code & Notepad--  ~~& HbuilderX & WPS & office tab & [MarkText](https://github.com/marktext/marktext) & Slide & 方方格子 & Typora & Yu Writer & UltraEdit~~
 
-文字识别：[TTime](https://github.com/inkTimeRecord/TTime) & 白描 ~~& 天若 OCR & ABBYY Screenshot Reader OCR~~
+文字识别：[Umi-OCR](https://github.com/hiroi-sora/Umi-OCR) ~~& [TTime](https://github.com/inkTimeRecord/TTime) & 白描 & 天若 OCR & ABBYY Screenshot Reader OCR~~
 
 ## 平面设计
 
-设计：Figma & [SVG-Editor](https://github.com/SVG-Edit/svgedit) & [Stable Diffusion](https://newzone.top/posts/2022-09-05-stable_diffusion_ai_painting.html)（AI 绘图） & Photoshop & 字由 ~~& GIMP & FastStone & illustrator & Dreamweaver & lightroom~~
+设计：Photoshop ~~& Figma & [SVG-Editor](https://github.com/SVG-Edit/svgedit) & [Stable Diffusion](https://newzone.top/posts/2022-09-05-stable_diffusion_ai_painting.html)（AI 绘图） & 字由 & GIMP & FastStone & illustrator & Dreamweaver & lightroom~~
 
 截图：Snipaste & ShareX ~~& webshot & SETUNA~~
 
-图像管理：Honeyview & Eagle & PicGo 图床 ~~& imageglass(界面好，但不支持全图拖拽和压缩包预览图片) & Google 相册 & 看图王 & 呱呱看图~~
+图像管理：PicGo 图床 ~~&Honeyview & Eagle &  imageglass(界面好，但不支持全图拖拽和压缩包预览图片) & Google 相册 & 看图王 & 呱呱看图~~
 
 图像处理：PP 鸭（免费版单次 10 张）& gifski（动图）& [RIOT](https://riot-optimizer.com/)(压缩) & Inpaint(去水印) & PhotoZoom(无损放大) ~~& 智图~~
 
@@ -37,13 +37,13 @@ Windows 自用软件，以开源软件为主。
 
 音频处理：[Reaper+ Ultraschall](https://sspai.com/post/76677) & [Audacity](https://github.com/audacity/audacity/releases) & iZotope rx9 ~~& Audition & 神舌变声器 & Goldwave~~
 
-视频播放：[Potplayer](https://zhuanlan.zhihu.com/p/35757176) & [ZY Player](https://github.com/Hiram-Wong/ZyPlayer/releases)（直播&在线资源） & [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases) & XySubFilter & VLC ~~& 恒星播放器 & QQ 影音 & 暴风影音 & 射手~~，播放器设置参考 [Potplayer + LAVFilters + madVR 配置教程](https://www.likecs.com/show-204327094.html)
+视频播放：MPV(画质好，**强推**) & [Potplayer](https://zhuanlan.zhihu.com/p/35757176) & [ZY Player](https://github.com/Hiram-Wong/ZyPlayer/releases)（直播&在线资源） & [LAVFilters](https://github.com/Nevcairiel/LAVFilters/releases) & XySubFilter & VLC ~~& 恒星播放器 & QQ 影音 & 暴风影音 & 射手~~，potplayer设置 [Potplayer + LAVFilters + madVR 配置教程](https://vcb-s.com/archives/7228)，[MPV设置参考](https://vcb-s.com/archives/7594)
 
 视频剪辑：剪映 & LosslessCut(音频提取·视频切割合并) & [ShanaEncoder](https://shana.pe.kr/shanaencoder_download/)(视频压缩) & [Quick Cut](https://github.com/HaujetZhao/QuickCut) (自动剪辑) & HandBrake(视频转换) & Premiere ~~& Shotcut & 500th Video Converter & 小丸工具箱~~
 
 字幕工具：[ChineseSubtitleConversionTool](https://github.com/xiaoxinpro/ChineseSubtitleConversionTool)（繁简转换）& Arctime Pro & [VideoSrt](https://github.com/wxbool/video-srt-windows) & 人人译视界
 
-视频下载：[JDownloader](https://jdownloader.org/download/index)（支持 YouTube playlist） & [youtube-dl](https://github.com/ytdl-org/youtube-dl) & [哔哩下载姬](https://github.com/leiurayer/downkyi) & [BBDown](https://github.com/nilaoda/BBDown)（命令行式哔哩哔哩下载器）
+视频下载：[JDownloader](https://jdownloader.org/download/index)（支持 YouTube playlist） & [youtube-dl](https://github.com/ytdl-org/youtube-dl) & [哔哩下载姬](https://github.com/leiurayer/downkyi) & [BBDown](https://github.com/nilaoda/BBDown)（命令行式哔哩哔哩下载器）& DownKyi(图形化bilibili下载器) & [4K Video Downloader](https://www.4kdownload.com/)
 
 影视管理：[tinyMediaManager](https://xiaoyaliu.notion.site/dc28a32c807d418691b83519fa523306)（刮削），易影视（本地管理）
 
@@ -51,7 +51,7 @@ Windows 自用软件，以开源软件为主。
 
 录屏直播：OBS & [Captura](https://github.com/MathewSachin/Captura/releases) & [SplitCam](https://splitcam.com/) (摄像头多开) & [terminalizer](https://github.com/faressoft/terminalizer)（终端录制） & [ScreenToGif](https://www.screentogif.com/) ~~& FlashBack Express~~
 
-换脸特效：Snap Camera（操作简单） & [Avatarify Python](https://github.com/alievk/avatarify)
+~~换脸特效：Snap Camera（操作简单） & [Avatarify Python](https://github.com/alievk/avatarify)~~
 
 按键可视化：[Carnac](https://github.com/Code52/carnac) & [Keyviz](https://github.com/mulaRahul/keyviz) & [ClickShow](https://github.com/cuiliang/ClickShow) & [KeyCastOW](https://github.com/brookhong/KeyCastOW)
 
@@ -73,7 +73,7 @@ Windows 自用软件，以开源软件为主。
 
 爬虫监测：OpenWebMonitor & [spider-flow](https://github.com/ssssssss-team/spider-flow)
 
-本地搜索：Everything([拼音扩展](https://github.com/Chaoses-Ib/IbEverythingExt)) & AnyTXT Searcher（全文|OCR）~~& DocFetcher & Archivarius 3000~~
+本地搜索：Everything([拼音扩展，不建议](https://github.com/Chaoses-Ib/IbEverythingExt)) & AnyTXT Searcher（全文|OCR）~~& DocFetcher & Archivarius 3000~~
 
 ## 文档管理
 
@@ -89,43 +89,45 @@ Windows 自用软件，以开源软件为主。
 
 ## 系统日常
 
-资源管理器：[One Commander](https://www.onecommander.com/) & [Q-Dir](https://www.softwareok.com/?seite=Freeware/Q-Dir) & FreeCommander & QTTabBar（Win10） ~~& 360 文件夹 & Clover（UI 不好看）~~
+资源管理器：~~[One Commander](https://www.onecommander.com/) & [Q-Dir](https://www.softwareok.com/?seite=Freeware/Q-Dir) & FreeCommander & QTTabBar（Win10） & 360 文件夹 & Clover（UI 不好看）~~    **真的不如巨硬自己的**
 
-浏览器：Chrome & Firefox(资源) & Brave(工具/书签) & Edge(移动端) & Tor ~~& Vivaldi & Tor & 猎豹 & 360 & 搜狗 & Maxthon & 百度~~
+浏览器：Chrome & Firefox(资源) & Brave(工具/书签) & Edge(移动端) & Tor ~~& Vivaldi & Tor & 猎豹 & 360 & 搜狗 & Maxthon & 百度~~    **一定要下载[国际版]()的**
 
-输入法：小狼毫 & `Win+H`（系统语音输入）& [CapsWriter-Offline](https://github.com/HaujetZhao/CapsWriter-Offline) ~~& QuickCut & 讯飞语记 & 微软输入法 & 影子输入法 & 搜狗输入法 & 讯飞输入法 & 百度输入法~~
+输入法： `Win+H`（系统语音输入）& 小狼毫 & [CapsWriter-Offline](https://github.com/HaujetZhao/CapsWriter-Offline) ~~& QuickCut & 讯飞语记 & 微软输入法 & 影子输入法 & 搜狗输入法 & 讯飞输入法 & 百度输入法~~
 
 通讯：微信 & TIM & Telegram & Discord & Thunderbird(邮箱) ~~& 飞书 & Slack & 钉耙 & 千牛 & 阿里旺旺~~
 
-下载：[Aria2](https://newzone.top/posts/2018-05-15-aria2_a_new_download_tool.html) & IDM & Kinhdown ~~& FDM(不支持 ed2k、磁力) & 迅雷~~
+下载：IDM(**神**) & [Aria2](https://newzone.top/posts/2018-05-15-aria2_a_new_download_tool.html) & Kinhdown ~~& FDM(不支持 ed2k、磁力) & 迅雷~~
 
-杀毒：火绒 ~~& 360 & 金山卫士~~
+杀毒：火绒 ~~& 360（小白用这个） & 金山卫士~~
 
-压缩：Bandizip ~~& PeaZip & 好压~~
+压缩：[7zip](https://www.7-zip.org/) & Bandizip ~~& PeaZip & 好压~~
 
 PDF：Sumatra PDF & PDFelement & [PDF 补丁丁](https://github.com/wmjordan/PDFPatcher)(书签)~~& 文电通 & foxit 领鲜版（轻量编辑 PDF）~~
 
-硬件驱动：360 驱动大师 & [Open Hardware Monitor](https://openhardwaremonitor.org/downloads/)（旧电脑风扇转速） & [Afterburner](https://www.msi.com/Landing/afterburner/graphics-cards)（显卡风扇转速） & [图吧硬件工具箱](https://www.tbtool.cn/) & AIDA64 ~~& SDI Snappy & 驱动精灵 & 鲁大师~~
+硬件驱动：360 驱动大师 & [Open Hardware Monitor](https://openhardwaremonitor.org/downloads/)（旧电脑风扇转速） & [Afterburner](https://www.msi.com/Landing/afterburner/graphics-cards)（显卡风扇转速） & [图吧硬件工具箱](https://www.tbtool.cn/) & AIDA64（图吧工具箱内置） ~~& SDI Snappy & 驱动精灵 & 鲁大师~~
 
-系统优化：[PowerToys](https://github.com/microsoft/PowerToys/releases/latest)、[RBTray](https://github.com/benbuck/rbtray)（最小化到托盘）、[ContextMenuManager](https://github.com/BluePointLilac/ContextMenuManager)(右键管理，遇过 bug，推荐火绒右键)、WizTree（磁盘空间分析）、优效日历、StartIsBack++、[O&O ShutUp10++](https://www.oo-software.com/en/shutup10)、Dism++、[Windows Update Blocker](https://www.sordum.org/downloads/?st-windows-update-blocker)（阻止系统更新）
+系统优化：[PowerToys](https://github.com/microsoft/PowerToys/releases/latest)、[RBTray](https://github.com/benbuck/rbtray)（最小化到托盘）、[ContextMenuManager](https://github.com/BluePointLilac/ContextMenuManager)(右键管理，遇过 bug，推荐火绒的右键管理)、WizTree（磁盘空间分析）、优效日历、StartIsBack++、[O&O ShutUp10++](https://www.oo-software.com/en/shutup10)、Dism++、[Windows Update Blocker](https://www.sordum.org/downloads/?st-windows-update-blocker)（阻止系统更新）
+
+系统美化：TranslucentTB（微软商店可下载）
 
 ## 低频工具
 
-编程工具：[MobaXTerm](https://github.com/RipplePiam/MobaXterm-Chinese-Simplified)（SSH+FTP）、GitHubDesktop、He3 工具箱、Postman、FileZilla（FTP）、DBeaver([数据库](https://kalacloud.com/blog/best-mysql-gui-tools/))、Fiddler(手机抓包)、Regex Match Tracer
+编程工具：jetbrains全家桶、[MobaXTerm](https://github.com/RipplePiam/MobaXterm-Chinese-Simplified)（SSH+FTP）、GitHubDesktop、He3 工具箱、Postman、FileZilla（FTP）、DBeaver([数据库](https://kalacloud.com/blog/best-mysql-gui-tools/))、Fiddler(手机抓包)、Regex Match Tracer
 
-翻译词典：DeepL ~~& GoldenDict & 欧陆词典 & 有道词典 & QTranslate & Lingoes~~
+翻译词典：DeepL & 有道词典 ~~& GoldenDict & 欧陆词典 & QTranslate & Lingoes~~
 
 思维导图：TheBrain(无限思维扩展) & Xmind ~~& MindManager~~
 
-虚拟机：VMware & VirtualBox
+虚拟机：VMware ~~& VirtualBox~~
 
 远程管理：RustDesk & ToDesk ~~& AnyDesk & Teamviewer & Remote Utilities & XT800~~
 
-卸载清理：IObit Uninstaller & Glary Utilities(注册表清理) ~~& Geek Uninstaller~~
+卸载清理：IObit Uninstaller & Glary Utilities(注册表清理，慎用) ~~& Geek Uninstaller~~
 
 护眼健康：[Stretchly](https://hovancik.net/stretchly/downloads/) ~~& EyeLoveU & iris & f.luxS~~
 
-偶尔使用：VeraCrypt(本地加密)、Recuva(文件恢复)、[12306Bypass](https://www.bypass.cn/)、爱思助手、Bluestacks(安卓模拟器)、[Ventoy](https://www.ventoy.net/cn/index.html)（制作可启动 U 盘）、微 PE 工具箱、[傲梅分区](https://www.disktool.cn/)
+偶尔使用：VeraCrypt(本地加密)、Recuva(文件恢复)、[12306Bypass](https://www.bypass.cn/)、爱思助手、Bluestacks(安卓模拟器)、[Ventoy](https://www.ventoy.net/cn/index.html)（制作可启动 U 盘）、微 PE 工具箱、[傲梅分区](https://www.disktool.cn/)、noMeiyoUI（字体修改）
 
 飞书妙记：倍速、跳过空白片段、字幕搜索定位视频，将视频（最长 4 小时）转为文字大纲，了解视频梗概，建立基础认知。等到自己上手实操的时候，遇到问题直接搜索文字定位到相关内容，再看文字对应的视频截图确定配置细节。如果视频过大，可以提取音频来上传。^[[视频课程学习留档](https://sspai.com/post/70960)]
 
@@ -137,6 +139,8 @@ PDF：Sumatra PDF & PDFelement & [PDF 补丁丁](https://github.com/wmjordan/PDF
 - [SmartTube](https://github.com/yuliskov/SmartTube)：电视盒子上的去广告版 YouTube。
 - [WechatExporter](https://github.com/BlueMatthew/WechatExporter)：微信记录导出，仅限 iOS 手机。安卓和 PC 端微信都加密，无法导出查看。
 - [AutoX](https://github.com/kkevsekk1/AutoX)：开源版的 Auto.js，没有包名屏蔽。相关信息可以参考 [快人一步：使用 Tasker+AutoX 一键直达健康码](https://sspai.com/post/65863)。
+- PikPak：国外网盘利用离线下载功能下载BT速度极快
+- VLC：手机上的MPV播放器
 
 ---
 
