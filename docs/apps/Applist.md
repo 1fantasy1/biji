@@ -181,4 +181,4 @@ NatTypeTester ：测试当前网络的 NAT 类型，在联机游戏时可检测�
   - [GT4T](https://www.gt4t.cn/)（不推荐）：可进行批量文件翻译，支持 Markdown。将文件夹拖入 GT4T 文件翻译器，即可翻译该文件下及子文件夹下的所有所选类型的文件。但似乎只能商用，添加自己的 API，依然提示付费。
   - [Markdown Docs Translator](https://github.com/ilyachch/md_docs-trans-app)：开源免费，但使用网页版接口进行翻译，速度较慢，且很容易出现问题而中断。
 
-部分应用推荐来自 @vector090。
+部分应用推荐来自 @vector090、@LearnData。

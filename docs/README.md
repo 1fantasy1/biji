@@ -13,13 +13,11 @@ icon: fa6-solid:book-open-reader
 
 更重要的是，**存下来的资料并不属于自己**,只有经过消化、应用，才会成为我的知识.
 
-因此，我基于在网上找到了LearnData 开源笔记，将我所有的文章与资料聚合到同一页面形成知识库，便于集中管理和分享。
+因此，我基于在网上找到了 LearnData 开源笔记，将我所有的文章与资料聚合到同一页面形成知识库，便于集中管理和分享。
 
-附笔记模板作者链接 >>> 
-## 模板作者链接:[<img height="20" src="https://newzone.top/logo.svg" width="25"/>](https://newzone.top/)
+附笔记模板作者链接    >>>  **模板作者链接**:[<img height="20" src="https://newzone.top/logo.svg" width="25"/>](https://newzone.top/)
 
 
-![](https://img.newzone.top/2022-08-22-19-28-25.png?imageMogr2/thumbnail/600x "笔记 + 文章 = LearnData 知识库")
 
 ![](https://img.newzone.top/2022-08-24-19-14-59.png "笔记/博客自动化发布")
 
