@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://biji.675222.xyz/atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
   <id>https://biji.675222.xyz/</id>
-  <title>Fantasy的开源笔记</title>
+  <title>Fantasy的笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</subtitle>
   <icon>https://biji.675222.xyz/favicon.ico</icon>
-  <updated>2024-09-08T09:49:35.462Z</updated>
+  <updated>2024-09-09T07:24:26.600Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://biji.675222.xyz/atom.xml"/>
   <link rel="alternate" href="https://biji.675222.xyz/"/>
