@@ -1,8 +1,8 @@
 //主题配置
 import { hopeTheme } from "vuepress-theme-hope";
-// import navbar from "./navbar.js";
+import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
-import { navbar } from "vuepress-theme-hope";
+// import { navbar } from "vuepress-theme-hope";
 
 export default hopeTheme({
   // 主题选项：https://theme-hope.vuejs.press/zh/config/theme/layout.html
@@ -17,129 +17,6 @@ export default hopeTheme({
 
   favicon: "/favicon.ico",
   logo: "/logo.svg",
-
-  locales: {
-    "/": {
-      lang: "zh-CN",
-      outlookLocales: {
-        themeColor: "主题色",
-        darkmode: "夜间模式",
-        fullscreen: "全屏",
-      },
-      blogLocales: {
-        article: "文章",
-        articleList: "文章列表",
-        category: "分类",
-        tag: "标签",
-        timeline: "时间轴",
-        timelineTitle: "时间轴标题",
-        all: "全部",
-        intro: "个人介绍",
-        star: "星标文章",
-      },
-      paginationLocales: {
-        prev: "上一页",
-        next: "下一页",
-        navigate: "跳转到",
-        action: "跳转",
-        errorText: "无效的页码 (最大: $page)",
-      },
-      encryptLocales: {
-        iconLabel: "加密",
-        placeholder: "输入密码",
-        remember: "记住密码",
-        errorHint: "密码错误",
-      },
-      navbarLocales: {
-        selectLangAriaLabel: "选择语言",
-        langName: "中文",
-      },
-      metaLocales: {
-        author: "作者",
-        date: "日期",
-        origin: "原创",
-        views: "访问量",
-        tag: "标签",
-        category: "分类",
-        readingTime: "阅读时间",
-        words: "字数",
-        toc: "目录",
-        prev: "上一页",
-        next: "下一页",
-        lastUpdated: "最后更新",
-        contributors: "贡献者",
-        editLink: "编辑此页",
-      },
-      routeLocales: {
-        skipToContent: "跳转到主要内容",
-        notFoundTitle: "页面未找到",
-        notFoundMsg: ["你查找的页面不存在。", "返回主页。"],
-        home: "主页",
-        back: "返回上一页",
-        openInNewWindow: "在新窗口打开",
-      },
-    },
-    "/en/": {
-      lang: "en-US",
-      outlookLocales: {
-        themeColor: "Theme Color",
-        darkmode: "Dark Mode",
-        fullscreen: "Fullscreen",
-      },
-      blogLocales: {
-        article: "Article",
-        articleList: "Article List",
-        category: "Category",
-        tag: "Tag",
-        timeline: "Timeline",
-        timelineTitle: "Timeline Title",
-        all: "All",
-        intro: "Introduction",
-        star: "Starred Articles",
-      },
-      paginationLocales: {
-        prev: "Previous",
-        next: "Next",
-        navigate: "Go to",
-        action: "Go",
-        errorText: "Invalid page number (max: $page)",
-      },
-      encryptLocales: {
-        iconLabel: "Encrypted",
-        placeholder: "Enter the password",
-        remember: "Remember me",
-        errorHint: "Wrong password",
-      },
-      navbarLocales: {
-        selectLangAriaLabel: "Select Language",
-        langName: "English",
-      },
-      metaLocales: {
-        author: "Author",
-        date: "Date",
-        origin: "Original",
-        views: "Views",
-        tag: "Tag",
-        category: "Category",
-        readingTime: "Reading Time",
-        words: "Words",
-        toc: "Table of Contents",
-        prev: "Previous",
-        next: "Next",
-        lastUpdated: "Last Updated",
-        contributors: "Contributors",
-        editLink: "Edit this page",
-      },
-      routeLocales: {
-        skipToContent: "Skip to content",
-        notFoundTitle: "Page Not Found",
-        notFoundMsg: ["The page you're looking for doesn't exist.", "Go back to home."],
-        home: "Home",
-        back: "Go back",
-        openInNewWindow: "Open in a new window",
-      },
-    },
-  },
 
   // 网站文章的版权声明
   license: "CC BY-NC-ND 4.0",
@@ -166,14 +43,21 @@ export default hopeTheme({
   // 全屏按钮
   fullscreen: true,
 
-  // locales: {
-  //   '/': {
-  //     selectLanguageName: '简体中文',
-  //   },
-  //   '/en/': {
-  //     selectLanguageName: 'English',
-  //   },
-  // },
+// 其他主题配置
+  locales: {
+    '/': {
+      // 中文配置
+      navbarLocales: {
+        selectLangAriaLabel: '选择语言',
+      },
+    },
+    '/en/': {
+      // 英文配置
+      navbarLocales: {
+        selectLangAriaLabel: 'Select Language',
+      },
+    },
+  },
 
   // 默认为 GitHub. 同时也可以是一个完整的 URL
   repo: "1fantasy1/1fantasy1.github.io",
@@ -190,7 +74,7 @@ export default hopeTheme({
   navbarLayout: {
     start: ["Brand"],
     center: ["Links"],
-    end: ["SocialLink", "Repo", "Outlook", "Search"],
+    end: ["SocialLink", "Repo", "Outlook", "Search", ],
   },
   // 是否在向下滚动时自动隐藏导航栏
   // navbarAutoHide: "always",
