@@ -4,7 +4,7 @@
   <title>Fantasy的笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</subtitle>
   <icon>https://biji.675222.xyz/favicon.ico</icon>
-  <updated>2024-09-16T12:36:11.533Z</updated>
+  <updated>2024-09-16T13:11:18.256Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://biji.675222.xyz/atom.xml"/>
   <link rel="alternate" href="https://biji.675222.xyz/"/>
@@ -14,7 +14,7 @@
     <title type="text">「Windows系列」如何在Windows 11上引入并安装BBR拥塞算法</title>
     <id>https://biji.675222.xyz/posts/2024-09-16-blog_%E7%BD%91%E7%BB%9C.html</id>
     <link href="https://biji.675222.xyz/posts/2024-09-16-blog_%E7%BD%91%E7%BB%9C.html"/>
-    <updated>2024-09-16T12:34:56.000Z</updated>
+    <updated>2024-09-16T13:10:02.000Z</updated>
     <summary type="html"><![CDATA[<p>Windows 11 22H2 已经支持 TCP BBR v2 拥塞控制。本文通过简单的设置，Windows 系统默认的 Cubic 拥塞控制切换到 BBR v2 拥塞控制，无需重启电脑，即可让您的 Windows11 网络速度直接起飞。</p>
 <h1>一、什么是BBR算法？</h1>
 <p>BBR (Bottleneck Bandwidth and Round-trip propagation time) 是一种拥塞控制算法，用于优化 TCP 协议在高带宽、高丢包网络环境下的性能。它可以根据当前网络的拥塞情况和延迟来自适应地调整发送速率，以达到最大的网络吞吐量和最小的延迟。BBR算法通过动态的测量和估计网络带宽和延迟等参数，确定合适的拥塞窗口大小，从而达到更好的传输效果。BBR算法目前已被广泛应用于Google的网络服务中，例如YouTube和Google Cloud平台。</p>]]></summary>
