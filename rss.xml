@@ -6,16 +6,16 @@
     <link>https://biji.675222.xyz/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 16 Sep 2024 08:18:57 GMT</pubDate>
-    <lastBuildDate>Mon, 16 Sep 2024 08:18:57 GMT</lastBuildDate>
+    <pubDate>Mon, 16 Sep 2024 12:36:11 GMT</pubDate>
+    <lastBuildDate>Mon, 16 Sep 2024 12:36:11 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>网络</category>
     <category>工具</category>
     <item>
       <title>「Windows系列」如何在Windows 11上引入并安装BBR拥塞算法</title>
-      <link>https://biji.675222.xyz/posts/2024-03-01-blog_example.html</link>
-      <guid>https://biji.675222.xyz/posts/2024-03-01-blog_example.html</guid>
+      <link>https://biji.675222.xyz/posts/2024-09-16-blog_%E7%BD%91%E7%BB%9C.html</link>
+      <guid>https://biji.675222.xyz/posts/2024-09-16-blog_%E7%BD%91%E7%BB%9C.html</guid>
       <source url="https://biji.675222.xyz/rss.xml">「Windows系列」如何在Windows 11上引入并安装BBR拥塞算法</source>
       <description>Windows 11 22H2 已经支持 TCP BBR v2 拥塞控制。本文通过简单的设置，Windows 系统默认的 Cubic 拥塞控制切换到 BBR v2 拥塞控制，无需重启电脑，即可让您的 Windows11 网络速度直接起飞。 一、什么是BBR算法？ BBR (Bottleneck Bandwidth and Round-trip prop...</description>
       <category>网络</category>
@@ -26,7 +26,7 @@
 <h1>二、目前Windows 默认的算法是什么？</h1>
 <p>CUBIC (Cubic TCP) 算法是一种与 BB-Reno 算法类似的拥塞控制算法，但是与 BB-Reno 算法不同的是，CUBIC 算法采用了一种非线性拥塞窗口增长方式，可以更好地适应高带宽、高延迟的网络环境。</p>
 <p>CUBIC 算法的拥塞控制窗口类似于一个立方体的增长曲线，采用了一种基于拥塞窗口的拟合曲线计算机制，通过对丢包事件的监控来调节窗口大小，实现拥塞避免和控制。CUBIC 算法可以在网络拥塞时自动进行拥塞避免和恢复措施，确保网络性能的稳定和流畅。</p>
-<p>CUBIC 算法已经被广泛应用于 Linux TCP 模块中，并且还被用于各种广域网和互联网环境中，是一种非常实用的拥塞控制算法。</p>
+<p>CUBIC 算法已经被广泛应用于s Linux TCP 模块中，并且还被用于各种广域网和互联网环境中，是一种非常实用的拥塞控制算法。</p>
 <h1>三、两者有什么区别？</h1>
 <p>BBR算法和CUBIC算法有以下几个本质不同点：</p>
 <ol>
@@ -52,17 +52,17 @@
 <ul>
 <li>
 <p>逐条输入命令</p>
-<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">netsh</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> int</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> tcp</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> supplemental</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> template=Internet</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> congestionprovider=BBR2</span></span>
-<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">netsh</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> int</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> tcp</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> supplemental</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> template=InternetCustom</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> congestionprovider=BBR2</span></span>
-<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">netsh</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> int</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> tcp</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> supplemental</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> template=Datacenter</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> congestionprovider=BBR2</span></span>
-<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">netsh</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> int</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> tcp</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> supplemental</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> template=DatacenterCustom</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> congestionprovider=BBR2</span></span>
-<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">netsh</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> int</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> tcp</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> supplemental</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> template=Compat</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> congestionprovider=BBR2</span></span></code></pre>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> netsh</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> int</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> tcp</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> supplemental</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> template=Internet</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> congestionprovider=BBR2</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> netsh</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> int</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> tcp</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> supplemental</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> template=InternetCustom</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> congestionprovider=BBR2</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> netsh</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> int</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> tcp</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> supplemental</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> template=Datacenter</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> congestionprovider=BBR2</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> netsh</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> int</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> tcp</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> supplemental</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> template=DatacenterCustom</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> congestionprovider=BBR2</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> netsh</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> int</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> tcp</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> supplemental</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> template=Compat</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> congestionprovider=BBR2</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 <li>
 <p>全部都是确定之后，输入查看当前算法的命令再次确认是否正确切换。</p>
 </li>
 </ul>
-<div class="language-vb line-numbers-mode" data-highlighter="shiki" data-ext="vb" data-title="vb" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">SettingName      CongestionProvider</span></span></code></pre>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> SettingName</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379">      CongestionProvider</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content:encoded>
       <enclosure url="https://my-img.675222.xyz/fantasy-biji/2024/09/a7a4266ed457809cbb55f3fb2f74e166.png" type="image/png"/>
     </item>
