@@ -73,13 +73,13 @@ export default hopeTheme({
   blog: {
     articleInfo: ["Date", "PageView", "Category", "Tag", "ReadingTime"],
     name: "沉积",
-    avatar: "/avatar_self.webp",
+    avatar: "/neko.jpg",
     description: "给岁月以文明，而不是给文明以岁月",
     intro: "/intro.html",
     medias: {
       GitHub: "https://github.com/1fantasy1",
       Zhihu: "https://www.zhihu.com/people/58-25-67-58-68",
-      少数派: { icon: "https://newzone.top/icons/sspai.svg", link: "https://sspai.com/u/fantasy_9928/posts" },
+      少数派: { icon: "https://my-img.675222.xyz/fantasy-biji/2024/09/a5d74ca35a708b138cad858f56b0c310.svg", link: "https://sspai.com/u/fantasy_9928/posts" },
       Email: "mail@675222.xyz",
     },
   },

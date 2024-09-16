@@ -6,8 +6,8 @@ icon: fa6-solid:house-crack
 title: 互联网小白
 #heroImage: /logo.svg
 heroText: 互联网小白
-tagline: 盛年不重来，一日难再晨
-bgImage: https://img.newzone.top/home-bg-1.jpg
+tagline: 铭记，释怀，然后前行
+bgImage: https://my-img.675222.xyz/fantasy-biji/2024/09/6777a88237c92549a098dee6d6a44350.jpg
 heroFullScreen: false
 #projects:
 #  - icon: project
