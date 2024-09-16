@@ -20,7 +20,7 @@ star: true
 order: -1
 ---
 
-本文通过简单的设置，无需重启电脑，即可让您的 Windows11 网络速度直接起飞。
+Windows 11 22H2 已经支持 TCP BBR v2 拥塞控制。本文通过简单的设置，Windows 系统默认的 Cubic 拥塞控制切换到 BBR v2 拥塞控制，无需重启电脑，即可让您的 Windows11 网络速度直接起飞。
 
 # 一、什么是BBR算法？
 
@@ -60,6 +60,8 @@ BBR算法和CUBIC算法有以下几个本质不同点：
    NetTCPSetting | Select SettingName, CongestionProvider
   ```
 
+![](https://my-img.675222.xyz/fantasy-biji/2024/09/a7a4266ed457809cbb55f3fb2f74e166.png)
+
 **5.2** 切换BBR算法
 
 - 逐条输入命令
@@ -74,11 +76,35 @@ BBR算法和CUBIC算法有以下几个本质不同点：
 
   
 
- 全部都是确定之后，输入查看当前算法的命令再次确认是否正确切换。
+ - 全部都是确定之后，输入查看当前算法的命令再次确认是否正确切换。
 
-![image-20230427085605114](https://s2.loli.net/2023/04/27/4NncGRCphEvguIT.png)
+```vb
+SettingName      CongestionProvider
+-----------      ------------------
+Automatic
+InternetCustom   BBR2
+DatacenterCustom BBR2
+Compat           BBR2
+Datacenter       BBR2
+Internet         BBR2
+```
 
 # 六、备注
 
 - 无需重启电脑，切换就能用。
+
 - 要是BBR启用后网络变慢，请按照上述步骤 切换成 `CUBIC`即可。
+
+**从BBR v2 恢复到原有的 CUBIC**
+
+在 Powershell 中输入下面的命令：
+
+```vb
+netsh int tcp set supplemental Template=Internet CongestionProvider=cubic
+netsh int tcp set supplemental Template=Datacenter CongestionProvider=cubic
+netsh int tcp set supplemental Template=Compat CongestionProvider=newreno
+netsh int tcp set supplemental Template=DatacenterCustom CongestionProvider=cubic
+netsh int tcp set supplemental Template=InternetCustom CongestionProvider=cubic
+```
+
+然后再使用 `Get-NetTCPSetting | Select SettingName, CongestionProvider` 命令来查看当前使用的 TCP 拥塞控制
