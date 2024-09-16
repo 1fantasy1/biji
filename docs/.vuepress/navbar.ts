@@ -1,3 +1,5 @@
+import { navbar } from "vuepress-theme-hope";
+
 export default navbar([
   { text: "博客", icon: "fa6-solid:blog", link: "/blog" },
   {
