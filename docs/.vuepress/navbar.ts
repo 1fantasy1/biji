@@ -52,10 +52,10 @@ export default navbar([
   // 添加语言切换按钮
   {
     text: '简体中文',
-    link: '/zh/',
+    link: '/',
   },
   {
     text: 'English',
-    link: '/',
+    link: '/en/',
   },
 ]);
