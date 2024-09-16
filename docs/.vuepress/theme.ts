@@ -58,6 +58,17 @@ export default hopeTheme({
       },
     },
   },
+// 添加语言切换的导航项
+  navbar: [
+    {
+      text: '简体中文',
+      link: '/',
+    },
+    {
+      text: 'English',
+      link: '/en/',
+    },
+  ],
 
   // 默认为 GitHub. 同时也可以是一个完整的 URL
   repo: "1fantasy1/1fantasy1.github.io",
