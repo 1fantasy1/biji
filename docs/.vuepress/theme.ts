@@ -43,6 +43,15 @@ export default hopeTheme({
   // 全屏按钮
   fullscreen: true,
 
+  locales: {
+      '/': {
+        selectLanguageName: '简体中文',
+      },
+      '/en/': {
+        selectLanguageName: 'English',
+      },
+    },
+
   // 默认为 GitHub. 同时也可以是一个完整的 URL
   repo: "1fantasy1/1fantasy1.github.io",
   // 自定义仓库链接文字。默认从 `repo` 中自动推断为 "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
