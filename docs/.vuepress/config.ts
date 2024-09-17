@@ -10,7 +10,7 @@ export default defineUserConfig({
   base: "/",
 
   // 网站语言，默认为中文
-  // lang: "zh-CN",
+  lang: "zh-CN",
   // 网站标题
   title: "Fantasy的笔记",
   // 网站描述
@@ -138,8 +138,6 @@ export default defineUserConfig({
       },
     },
   },
-
-
 
   theme,
   // 是否开启页面预拉取，如果服务器宽带足够，可改为 true，会提升其他页面加载速度
