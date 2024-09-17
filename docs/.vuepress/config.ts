@@ -1,7 +1,7 @@
 import { webpackBundler } from "@vuepress/bundler-webpack";
 import { defineUserConfig } from "vuepress";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
-// import navbar from './navbar.js';  // 确认文件路径是否正确
+import navbar from './navbar.js';  // 确认文件路径是否正确
 
 import theme from "./theme.js";
 
