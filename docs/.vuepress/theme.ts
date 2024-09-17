@@ -92,6 +92,7 @@ export default hopeTheme({
       Zhihu: "https://www.zhihu.com/people/58-25-67-58-68",
       少数派: { icon: "https://my-img.675222.xyz/fantasy-biji/2024/09/a5d74ca35a708b138cad858f56b0c310.svg", link: "https://sspai.com/u/fantasy_9928/posts" },
       Email: "https://biji.675222.xyz/mail.html",
+      RSS: "/rss.xml",
     },
   },
 
