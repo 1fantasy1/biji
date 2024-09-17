@@ -4,17 +4,74 @@
   <title>Fantasy的笔记</title>
   <subtitle>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</subtitle>
   <icon>https://biji.675222.xyz/favicon.ico</icon>
-  <updated>2024-09-17T05:26:08.196Z</updated>
+  <updated>2024-09-17T10:30:34.983Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://biji.675222.xyz/atom.xml"/>
   <link rel="alternate" href="https://biji.675222.xyz/"/>
-  <category term="网络"/>
   <category term="工具"/>
+  <category term="网络"/>
+  <entry>
+    <title type="text">基于Algolia实现网站全文搜索</title>
+    <id>https://biji.675222.xyz/posts/2024-03-02-blog_%E5%B7%A5%E5%85%B7_Algolia.html</id>
+    <link href="https://biji.675222.xyz/posts/2024-03-02-blog_%E5%B7%A5%E5%85%B7_Algolia.html"/>
+    <updated>2024-09-17T10:29:16.000Z</updated>
+    <summary type="html"><![CDATA[<h2>一、 前言</h2>
+<p>​	我的笔记来使用的是本地搜素，可是总是会有一些内容搜索不出来。在网上搜索后，找到了第三方搜索AlgoliaDocSearch 来实现个人网站的全文搜索。</p>
+<h2>二、Algolia</h2>
+<p>​	VuePress 的官方文档就是使用的 Algolia 搜索，使用 Algolia 搜索最大的好处就是方便，它会自动爬取网站的页面内容并构建索引，你只用申请一个 Algolia 服务，在网站上添加一些代码，就像添加统计代码一样，然后就可以实现一个全文搜索功能</p>
+<h2>三、实现全文搜索</h2>
+<h5>1.申请Algolia DocSearch服务</h5>]]></summary>
+    <content type="html"><![CDATA[<h2>一、 前言</h2>
+<p>​	我的笔记来使用的是本地搜素，可是总是会有一些内容搜索不出来。在网上搜索后，找到了第三方搜索AlgoliaDocSearch 来实现个人网站的全文搜索。</p>
+<h2>二、Algolia</h2>
+<p>​	VuePress 的官方文档就是使用的 Algolia 搜索，使用 Algolia 搜索最大的好处就是方便，它会自动爬取网站的页面内容并构建索引，你只用申请一个 Algolia 服务，在网站上添加一些代码，就像添加统计代码一样，然后就可以实现一个全文搜索功能</p>
+<h2>三、实现全文搜索</h2>
+<h5>1.申请Algolia DocSearch服务</h5>
+<p>​	前往 <a href="https://docsearch.algolia.com/apply/" target="_blank" rel="noopener noreferrer">Algolia DocSearch Apply</a> 网站，填写网站地址、邮箱、仓库地址等信息，然后提交申请。</p>
+<figure><img src="https://my-img.675222.xyz/fantasy-biji/2024/09/a26c594128435ec52eae983b79839dae.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<blockquote>
+<p>注：填写的网站地址必须是公开的、完整的、内容稳定。如果网站还处于测试阶段，申请通过的概率很小。</p>
+</blockquote>
+<h5>2 回复确认邮件</h5>
+<p>​	申请通过后，Algolia DocSearch 官方会发送确认邮件到上一个步骤中填写的邮箱，收到后需要回复一下这个网站是我们负责开发维护的，并且可以修改网站代码。</p>
+<figure><img src="https://my-img.675222.xyz/fantasy-biji/2024/09/cefffd2de66a1cb3dc6a990ce63f7363.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<blockquote>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">回复内容：Thanks!</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> I</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> am</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> the</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> maintatiner</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> of</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> the</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> website,</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> I</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> can</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> modify</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> the</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> code.</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></blockquote>
+<figure><img src="https://my-img.675222.xyz/fantasy-biji/2024/09/474f4a3778615e8304666192f38ee064.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>​	然后第二天就会收到包含 AppId 等所需信息的邮件：</p>
+<figure><img src="https://my-img.675222.xyz/fantasy-biji/2024/09/313fb240493680309001c1d3c4401e4a.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h5>3.启动搜索服务</h5>
+<p>Algolia DocSearch 发的邮件包含 <strong>appId、apiKey 和 indexName</strong>，用于在网站生成框架中配置使用，我的笔记模板已经提供，其他框架类似：</p>
+<figure><img src="https://my-img.675222.xyz/fantasy-biji/2024/09/1a87a85eb74faec8360b8db8c05a44ce.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>​	邮件还会提供接受邀请的链接，前往该链接重新设置密码后（账号是申请时填的邮箱），即可登录 Algolia。</p>
+<figure><img src="https://my-img.675222.xyz/fantasy-biji/2024/09/0da780d320570674c5c411892e0cc3a1.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>​	登陆后选择对应的项目，与indexName的名字相同：</p>
+<figure><img src="https://my-img.675222.xyz/fantasy-biji/2024/09/8e179cfddc11e25020f10f3d782804ea.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>​	点击Go To Crawler（<strong>上图蓝色底</strong>）进入爬虫后台，提示前往<a href="crawler.algolia.com">新网站</a>：</p>
+<figure><img src="https://my-img.675222.xyz/fantasy-biji/2024/09/83167707a55d37906a841f92dc803266.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>​	点击进入爬虫：</p>
+<figure><img src="https://my-img.675222.xyz/fantasy-biji/2024/09/7af053eb1a0cddc412fc4c7e8e13b5d3.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>​	如上图红色框内数字为0需进行下一步：</p>
+<p>点击左侧菜单中的"Editor"查看并编辑爬虫代码，注意看代码中的 <code>pathsToMatch</code> 路径（图中白色框），很明显不对，后面多了个 <code>docs</code>，将它改成正确的网站路径 <code>https://biji.675222.xyz/**</code>：</p>
+<blockquote>
+<p>原因是我们的网站主页是https://biji.675222.xyz/，需要搜索的内容也都在这里。</p>
+</blockquote>
+<figure><img src="https://my-img.675222.xyz/fantasy-biji/2024/09/35296146de56c200adf676522b023c14.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>修改完成后，进行测试（图中红色框），如果能成功提取到数据则表示没问题（有图中黄色框类似内容），点击右上角的"Save"按钮保存代码后切换回"Overview"，点击右上角的 “Restart crawling” 重新爬取数据即可。</p>
+<blockquote>
+<p>如果还是没有提取到数据，可参见：https://github.com/mqyqingfeng/Blog/issues/267#issuecomment-1078620438</p>
+</blockquote>
+<p>完</p>
+]]></content>
+    <category term="工具"/>
+    <published>2024-09-17T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">「Windows系列」如何在Windows 11上引入并安装BBR拥塞算法</title>
-    <id>https://biji.675222.xyz/posts/2024-09-16-blog_%E7%BD%91%E7%BB%9C.html</id>
-    <link href="https://biji.675222.xyz/posts/2024-09-16-blog_%E7%BD%91%E7%BB%9C.html"/>
-    <updated>2024-09-16T13:48:37.000Z</updated>
+    <id>https://biji.675222.xyz/posts/2024-09-16-blog_%E7%BD%91%E7%BB%9C_BBR2.html</id>
+    <link href="https://biji.675222.xyz/posts/2024-09-16-blog_%E7%BD%91%E7%BB%9C_BBR2.html"/>
+    <updated>2024-09-17T10:29:16.000Z</updated>
     <summary type="html"><![CDATA[<p>Windows 11 22H2 已经支持 TCP BBR v2 拥塞控制。本文通过简单的设置，Windows 系统默认的 Cubic 拥塞控制切换到 BBR v2 拥塞控制，无需重启电脑，即可让您的 Windows11 网络速度直接起飞。</p>
 <h1>一、什么是BBR算法？</h1>
 <p>BBR (Bottleneck Bandwidth and Round-trip propagation time) 是一种拥塞控制算法，用于优化 TCP 协议在高带宽、高丢包网络环境下的性能。它可以根据当前网络的拥塞情况和延迟来自适应地调整发送速率，以达到最大的网络吞吐量和最小的延迟。BBR算法通过动态的测量和估计网络带宽和延迟等参数，确定合适的拥塞窗口大小，从而达到更好的传输效果。BBR算法目前已被广泛应用于Google的网络服务中，例如YouTube和Google Cloud平台。</p>]]></summary>
@@ -64,17 +121,5 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content>
     <category term="网络"/>
     <published>2024-09-16T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">博客文章样例2</title>
-    <id>https://biji.675222.xyz/posts/2024-03-02-blog_example2.html</id>
-    <link href="https://biji.675222.xyz/posts/2024-03-02-blog_example2.html"/>
-    <updated>2024-09-07T06:39:30.000Z</updated>
-    <summary type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>博客文章内容，支持 Markdown 和 HTML 语言。</p>
-]]></content>
-    <category term="工具"/>
-    <published>2024-03-02T00:00:00.000Z</published>
   </entry>
 </feed>
