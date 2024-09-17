@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://biji.675222.xyz/en/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="https://biji.675222.xyz/en/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>Fantasy的笔记</title>
+    <link>https://biji.675222.xyz/en/</link>
+    <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
+    <language>en-US</language>
+    <pubDate>Tue, 17 Sep 2024 03:42:44 GMT</pubDate>
+    <lastBuildDate>Tue, 17 Sep 2024 03:42:44 GMT</lastBuildDate>
+    <generator>@vuepress/plugin-feed</generator>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+  </channel>
+</rss>
