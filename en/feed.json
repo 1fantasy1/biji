@@ -5,5 +5,17 @@
   "feed_url": "https://biji.675222.xyz/en/feed.json",
   "description": "开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。",
   "favicon": "https://biji.675222.xyz/favicon.ico",
-  "items": []
+  "items": [
+    {
+      "title": "",
+      "url": "https://biji.675222.xyz/en/blog.html",
+      "id": "https://biji.675222.xyz/en/blog.html",
+      "summary": "hello",
+      "content_html": "<p>hello</p>\n",
+      "date_published": "2024-09-17T04:10:43.000Z",
+      "date_modified": "2024-09-17T04:10:43.000Z",
+      "authors": [],
+      "tags": []
+    }
+  ]
 }
