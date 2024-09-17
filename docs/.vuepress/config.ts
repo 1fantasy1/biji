@@ -10,7 +10,7 @@ export default defineUserConfig({
   base: "/",
 
   // 网站语言，默认为中文
-  lang: "zh-CN",
+  // lang: "zh-CN",
   // 网站标题
   title: "Fantasy的笔记",
   // 网站描述
