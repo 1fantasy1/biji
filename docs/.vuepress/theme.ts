@@ -21,6 +21,8 @@ export default hopeTheme({
   // 网站文章的版权声明
   license: "CC BY-NC-ND 4.0",
 
+  footer: "<a href=\"https://ipw.cn/ipv6webcheck/?site=ipw.cn\" title=\"本站支持IPv6访问\" target='_blank'><img style='display:inline-block;vertical-align:middle' alt=\"本站支持IPv6访问\" src=\"https://static.ipw.cn/icon/ipv6-s1.svg\"></a>\n",
+
   // copyright 默认为 Copyright © <作者>
   copyright: `
   版权声明：自由转载 - 非商用 - 非衍生 - 保持署名<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans" target="_blank" rel="noopener noreferrer">（创意共享 4.0 许可证）</a>|
