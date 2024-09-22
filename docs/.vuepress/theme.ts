@@ -21,7 +21,7 @@ export default hopeTheme({
   // 网站文章的版权声明
   license: "CC BY-NC-ND 4.0",
 
-  footer: "<a href=\"https://ipw.cn/ipv6webcheck/?site=ipw.cn\" title=\"本站支持IPv6访问\" target='_blank'><img style='display:inline-block;vertical-align:middle' alt=\"本站支持IPv6访问\" src=\"https://static.ipw.cn/icon/ipv6-s1.svg\"></a>\n",
+  footer: "<a href=\"https://ipw.cn/ipv6webcheck/?site=ipw.cn\" title=\"本站支持IPv6访问\" target='_blank'><img style='display:inline-block;vertical-align:middle' alt=\"本站支持IPv6访问\" src=\"https://static.ipw.cn/icon/ipv6-s1.svg\"></a>",
 
   // copyright 默认为 Copyright © <作者>
   copyright: `
